@@ -17,7 +17,7 @@ public class Book {
 
     public Book(String x) {
 
-        System.out.println("Parameterized constructor " + x);
+        System.out.println(x);
     }
 
     public void setBookInfo() {

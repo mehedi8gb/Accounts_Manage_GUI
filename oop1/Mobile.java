@@ -19,7 +19,7 @@ public class Mobile {
 
     public Mobile(String x) {
 
-        System.out.println("Parameterized constructor " + x);
+        System.out.println(x);
     }
 
     public void setInfo() {
