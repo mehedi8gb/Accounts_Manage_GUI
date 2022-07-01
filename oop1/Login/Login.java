@@ -54,7 +54,7 @@ public class Login {
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
 
-                File loginf = new File("H:\\java\\Account_Manage\\data\\users.txt");
+                File loginf = new File("data\\users.txt");
                 try {
                     Scanner read = new Scanner(loginf);
                     read.useDelimiter(",");
