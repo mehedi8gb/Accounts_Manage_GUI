@@ -232,13 +232,6 @@ public class Contact{
     }
 
     public void setInfo(String a, String b, String c, String d, String e) {
-        // String a = JOptionPane.showInputDialog("Enter Person's Name: ");
-        // String b = JOptionPane.showInputDialog("Enter Person's ID : ");
-        // String c = JOptionPane.showInputDialog("Enter Person's Mobile Number : ");
-        // int d = Integer.parseInt(JOptionPane.showInputDialog("Enter Person's Age : "));
-        // String e = JOptionPane.showInputDialog("Enter Gender [ex:M/F] : ");
-        // Character gender = e.charAt(0);
-
         personName = a;
         personId = b;
         mobileNumber = c;
@@ -261,6 +254,7 @@ public class Contact{
 
         JLabel MobileL = new JLabel("Mobile Number : ");
         JLabel Mobile = new JLabel(mobileNumber);
+
         JLabel OperatorL = new JLabel("Operator");
         JLabel Operator = new JLabel(operator);
 
@@ -271,7 +265,7 @@ public class Contact{
       
 
         UserInfo.setBorder(new EmptyBorder(10,30,100,30));
-        UserInfo.setLayout(new GridLayout(6,2));
+        UserInfo.setLayout(new GridLayout(7,2));
         UserInfo.setBackground(new Color(196, 203, 204));
         UserInfo.setPreferredSize(new Dimension(300,300));
         UserInfo.setFont(new Font("Sans Serif",Font.BOLD,25));
@@ -280,6 +274,8 @@ public class Contact{
         UserInfo.add(Name);
         UserInfo.add(idL);
         UserInfo.add(Id);
+        UserInfo.add(AgeL);
+        UserInfo.add(Age);
         UserInfo.add(MobileL);
         UserInfo.add(Mobile);
         UserInfo.add(OperatorL);
