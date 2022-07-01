@@ -9,7 +9,7 @@ import javax.swing.border.EmptyBorder;
 public class Contact{
     static String personName;
     public static String personId;
-    static int age;
+    static String age;
    static String mobileNumber;
    static String address;
    static Character gender;
@@ -209,7 +209,7 @@ public class Contact{
                     }
                                        
                      else {
-                        Menu.user.setInfo(name.getText(), id.getText(), mobile.getText(), Integer.parseInt(age.getText()),
+                        Menu.user.setInfo(name.getText(), id.getText(), mobile.getText(), age.getText(),
                                 address.getText());
                         JOptionPane.showMessageDialog(null, "Data Added Successfully", "success",
                                 JOptionPane.INFORMATION_MESSAGE);
@@ -231,7 +231,7 @@ public class Contact{
         return personName;
     }
 
-    public void setInfo(String a, String b, String c, int d, String e) {
+    public void setInfo(String a, String b, String c, String d, String e) {
         // String a = JOptionPane.showInputDialog("Enter Person's Name: ");
         // String b = JOptionPane.showInputDialog("Enter Person's ID : ");
         // String c = JOptionPane.showInputDialog("Enter Person's Mobile Number : ");
@@ -255,6 +255,10 @@ public class Contact{
         // Name.setText("<html><body></br></body></html>");
         JLabel idL = new JLabel("ID : ");
         JLabel Id = new JLabel(personId);
+
+        JLabel AgeL = new JLabel("AGE : ");
+        JLabel Age = new JLabel(age);
+
         JLabel MobileL = new JLabel("Mobile Number : ");
         JLabel Mobile = new JLabel(mobileNumber);
         JLabel OperatorL = new JLabel("Operator");
